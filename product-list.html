@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 2 Product List | Style Master File - Application Reference</title>
 <meta name="author" content="Nitish Kohli">
-<meta name="description" content="2.1 Filters   2.2 Creating Products   2.3 Modifying Products   2.4 Removing Products   2.5 Locking / Unlocking Product BOMs   2.6 Opening a Product BOM   2.7 Downloads">
+<meta name="description" content="Product List tab enables to Add / Update / Remove Product IDs. A Product ID is defined as a unique ‘Customer - Season - Style - Version - Garment Color Code - Garment Color Name’ combination....">
 <meta name="generator" content="bookdown 0.28 with bs4_book()">
 <meta property="og:title" content="Chapter 2 Product List | Style Master File - Application Reference">
 <meta property="og:type" content="book">
-<meta property="og:description" content="2.1 Filters   2.2 Creating Products   2.3 Modifying Products   2.4 Removing Products   2.5 Locking / Unlocking Product BOMs   2.6 Opening a Product BOM   2.7 Downloads">
+<meta property="og:description" content="Product List tab enables to Add / Update / Remove Product IDs. A Product ID is defined as a unique ‘Customer - Season - Style - Version - Garment Color Code - Garment Color Name’ combination....">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 2 Product List | Style Master File - Application Reference">
-<meta name="twitter:description" content="2.1 Filters   2.2 Creating Products   2.3 Modifying Products   2.4 Removing Products   2.5 Locking / Unlocking Product BOMs   2.6 Opening a Product BOM   2.7 Downloads">
+<meta name="twitter:description" content="Product List tab enables to Add / Update / Remove Product IDs. A Product ID is defined as a unique ‘Customer - Season - Style - Version - Garment Color Code - Garment Color Name’ combination....">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -72,41 +72,192 @@
 <h1>
 <span class="header-section-number">2</span> Product List<a class="anchor" aria-label="anchor" href="#product-list"><i class="fas fa-link"></i></a>
 </h1>
+<p>Product List tab enables to Add / Update / Remove Product IDs.</p>
+<p>A Product ID is defined as a unique ‘Customer - Season - Style - Version - Garment Color Code - Garment Color Name’ combination. Effectively, this the unique Style unit against which a BOM / Cost Sheet is created.</p>
+<p>The Product List tab can be used to update the following fields against a Product ID. Additionally to the below listed fields, one can also update the Garment Sizes and Garment Base Sizes against the said Product ID.</p>
+<p>Product ID, Customer, Season, Style, Version No, Garment Color Code, Garment Color Name, WFX Color Code, Pack Type, Garments In Pack, Buyer Department, Program, Gender, Article Description, Merchant, Material Type, Product Group, Sub Category, Internal Style Ref, Selling Price, Efficiency, No of Lines, No of Machines, PD Template, Wash Garment, Sub Con Type, Status, Graphic No 1, Outside Operation 1, Op Rate 1, Graphic No 2, Outside Operation 2, Op Rate 2, Graphic No 3, Outside Operation 3, Op Rate 3, Remarks, SMV Level, Creation User, Created Datetime, Last Update User, Updated Datetime, Product Status</p>
 <div id="filters" class="section level2" number="2.1">
 <h2>
 <span class="header-section-number">2.1</span> Filters<a class="anchor" aria-label="anchor" href="#filters"><i class="fas fa-link"></i></a>
 </h2>
+<p>Product List tab allows the users to filter based on</p>
+<div class="inline-figure"><img src="images/Product-List-Filters.png" style="width:100.0%"></div>
+<ol style="list-style-type: decimal">
+<li>Customer</li>
+<li>Season</li>
+<li>Style</li>
+<li>Version</li>
+<li>Garment Color</li>
+<li>Program</li>
+</ol>
+<p>Further to the above mentioned filters, each column of the table can also be filtered. Column filtering works like a search field within the column where one can simply type what they are searching for.</p>
+<div class="inline-figure"><img src="images/Product-List-Table-Filter.png" style="width:100.0%"></div>
 </div>
 <div id="creating-products" class="section level2" number="2.2">
 <h2>
 <span class="header-section-number">2.2</span> Creating Products<a class="anchor" aria-label="anchor" href="#creating-products"><i class="fas fa-link"></i></a>
 </h2>
+<p>To create a new Product ID, one needs to do as follows.</p>
+<ol style="list-style-type: decimal">
+<li>Select a Customer</li>
+<li>Click on the ‘Download All’ or ‘Download Selected’ button
+<ul>
+<li>This will download an Excel file</li>
+</ul>
+</li>
+<li>On the downloaded Excel file, add a new record
+<ul>
+<li><p>Leave the Product ID blank</p></li>
+<li><p>Customer, Season, Style, Version, Garment Color Code and Garment Color Name are mandatory</p></li>
+<li><p>All other columns are optional and can be either updated at the time of creation or can also be updated later</p></li>
+<li><p>If you wish to create multiple new Product IDs, then add multiple new records / rows on the excel file</p></li>
+</ul>
+</li>
+<li>Once New records have been added to the downloaded Excel file, Save the excel file</li>
+<li>Upload the updated Excel file into the Product List tab
+<ul>
+<li>Make sure that the correct Customer is selected when uploading</li>
+</ul>
+</li>
+<li>Once the file has been uploaded, press the ‘Save’ button
+<ul>
+<li>This would create N number of Product IDs</li>
+</ul>
+</li>
+</ol>
+<p>Please note: Customer, Season, Style, Version, Garment Color Code and Garment Color Name combination should always be unique for each line. If this is not unique, then new Product IDs will not be created for each row on the Excel file.</p>
 </div>
 <div id="modifying-products" class="section level2" number="2.3">
 <h2>
 <span class="header-section-number">2.3</span> Modifying Products<a class="anchor" aria-label="anchor" href="#modifying-products"><i class="fas fa-link"></i></a>
 </h2>
+<p>To Modify data against Product IDs, one needs to do as follows</p>
+<ol style="list-style-type: decimal">
+<li>Select a Customer</li>
+<li>Select a Season
+<ul>
+<li>All Product IDs against the Customer - Season will be listed on the below table</li>
+</ul>
+</li>
+<li>Apply any further filters as and when necessary</li>
+<li>Select the relevant Product ID(s)</li>
+<li>Download using the ‘Download Selected’ button</li>
+<li>Modify the columns needed to be modified and Save the Excel file
+<ul>
+<li><p>Do not edit the Product ID column</p></li>
+<li><p>Key columns Customer, Season, Style, Version, Garment Color Code and Garment Color Name cannot be changed, even if you do it will not change in the system</p></li>
+</ul>
+</li>
+<li>Upload the modified Excel file</li>
+<li>Press the ‘Save’ button</li>
+</ol>
 </div>
 <div id="removing-products" class="section level2" number="2.4">
 <h2>
 <span class="header-section-number">2.4</span> Removing Products<a class="anchor" aria-label="anchor" href="#removing-products"><i class="fas fa-link"></i></a>
 </h2>
+<p>To Remove Product ID(s)</p>
+<ol style="list-style-type: decimal">
+<li>Select a Customer</li>
+<li>Select a Season
+<ul>
+<li>All Product IDs against the Customer - Season will be listed on the below table</li>
+</ul>
+</li>
+<li>Apply any further filters as and when necessary</li>
+<li>Select the relevant Product ID(s)</li>
+<li>Press the ‘Remove’ button</li>
+<li>A popup message will appear, asking you to confirm</li>
+<li>Press the ‘Remove’ button on the popup to confirm</li>
+</ol>
 </div>
 <div id="locking-unlocking-product-boms" class="section level2" number="2.5">
 <h2>
-<span class="header-section-number">2.5</span> Locking / Unlocking Product BOMs<a class="anchor" aria-label="anchor" href="#locking-unlocking-product-boms"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2.5</span> Locking / Unlocking Product BOM(s)<a class="anchor" aria-label="anchor" href="#locking-unlocking-product-boms"><i class="fas fa-link"></i></a>
 </h2>
+<p>Locking of BOM(s) was introduced to stop Development Merchants from making BOM changes after a certain point.</p>
+<p>All users who have access as ‘Development’ merchant or ‘Bulk’ merchant, can ‘Lock’ the BOM(s).</p>
+<p>For Unlocking, only certain nominated ‘Bulk’ merchant users are given access to ‘Unlock’ BOM(s).</p>
+<p>To Lock / Unlock BOM(s)</p>
+<ol style="list-style-type: decimal">
+<li>Select a Customer</li>
+<li>Select a Season
+<ul>
+<li>All Product IDs against the Customer - Season will be listed on the below table</li>
+</ul>
+</li>
+<li>Apply any further filters as and when necessary</li>
+<li>Select the relevant Product ID(s)</li>
+<li>Press the ‘Lock / Unlock’ button
+<ul>
+<li><p>If the user has only ‘Lock’ access, selected BOM(s) will get ‘Locked’</p></li>
+<li><p>If the user has both ‘Lock’ &amp; ‘Unlock’ access, the lock status will get toggled such as ‘Locked’ BOM(s) will get unlocked, while the ‘Unlocked’ BOM(s) will get locked.</p></li>
+</ul>
+</li>
+</ol>
 </div>
 <div id="opening-a-product-bom" class="section level2" number="2.6">
 <h2>
 <span class="header-section-number">2.6</span> Opening a Product BOM<a class="anchor" aria-label="anchor" href="#opening-a-product-bom"><i class="fas fa-link"></i></a>
 </h2>
+<p>To add / update / remove Raw Material items against a Product ID BOM, user needs to open the said BOM.</p>
+<p>To open a BOM click on the <i class="fa fa-pencil-square"></i> icon against the said Product ID. This would open a new browser tab, where the BOM can be created / edited for the given Product ID.</p>
+<p>Please refer to <a href="bill-of-materials.html#bill-of-materials-1">Bill of Materials</a> for the documentation on BOM.</p>
 </div>
 <div id="downloads" class="section level2" number="2.7">
 <h2>
 <span class="header-section-number">2.7</span> Downloads<a class="anchor" aria-label="anchor" href="#downloads"><i class="fas fa-link"></i></a>
 </h2>
-
+<p>Different types of Excel files can be downloaded from the Product List tab for the select Product IDs.</p>
+<ol style="list-style-type: decimal">
+<li>Product List
+<ul>
+<li>Using the ‘Download All’ or ‘Download Selected’ buttons, this gives the upload format for Product ID creation or modification</li>
+</ul>
+</li>
+<li>Consol. BOM
+<ul>
+<li>This button gives a single excel file combining the BOMs for the selected Product IDs. It is useful if someone wishes to analyse multiple BOMs and needs multiple Style-Color BOMs to be downloaded together</li>
+</ul>
+</li>
+<li>LD Tracker
+<ul>
+<li>LD Tracker button is another version of the Consol. BOM, but with limited number of columns. This column format was requested by the Material Development team to help follow up on Lab Dips</li>
+</ul>
+</li>
+<li>COE Excel
+<ul>
+<li><p>COE Excel file the format which is sent to the COE team for updating WFX</p></li>
+<li><p>Using this button, a ‘Zip’ file is created with multiple Excel files compressed inside a folder</p></li>
+<li><p>Each Excel file represents 1 Product ID</p></li>
+<li><p>This button is a convenient to download multiple COE Excel files without opening each Product BOM one by one</p></li>
+<li><p>This functionality was requested originally to make it easier for the Lululemon team to send BOMs for the operations in Cambodia</p></li>
+</ul>
+</li>
+<li>Logs
+<ul>
+<li><p>Select a Customer</p></li>
+<li><p>Select a Season</p></li>
+<li><p>Select the relevant Product ID(s)</p></li>
+<li><p>User must select the type of Log(s) that they wish to download</p></li>
+<li><p>Click on the <i class="fa fa-download"></i> button</p></li>
+<li>
+<p>Logs can be downloaded for</p>
+<ul>
+<li><p>Product List</p></li>
+<li><p>BOM</p></li>
+<li><p>Orderbook</p></li>
+<li><p>Bulk YY - Fabric</p></li>
+<li><p>Bulk YY - Trims</p></li>
+<li><p>Thread YY - Lulu</p></li>
+<li><p>Thread YY - IE</p></li>
+<li><p>Product ID - Lock / Unlock</p></li>
+<li><p>YY Confirmation</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 </div>
 </div>
   <div class="chapter-nav">
@@ -120,7 +271,7 @@
 <li><a class="nav-link" href="#creating-products"><span class="header-section-number">2.2</span> Creating Products</a></li>
 <li><a class="nav-link" href="#modifying-products"><span class="header-section-number">2.3</span> Modifying Products</a></li>
 <li><a class="nav-link" href="#removing-products"><span class="header-section-number">2.4</span> Removing Products</a></li>
-<li><a class="nav-link" href="#locking-unlocking-product-boms"><span class="header-section-number">2.5</span> Locking / Unlocking Product BOMs</a></li>
+<li><a class="nav-link" href="#locking-unlocking-product-boms"><span class="header-section-number">2.5</span> Locking / Unlocking Product BOM(s)</a></li>
 <li><a class="nav-link" href="#opening-a-product-bom"><span class="header-section-number">2.6</span> Opening a Product BOM</a></li>
 <li><a class="nav-link" href="#downloads"><span class="header-section-number">2.7</span> Downloads</a></li>
 </ul>
