@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 3 Bill of Materials | Style Master File - Application Reference</title>
 <meta name="author" content="Nitish Kohli">
-<meta name="description" content="3.1 Header   3.2 Bill of Materials  3.2.1 Creating Line Items   3.2.2 Modifying Line Items   3.2.3 Size Dependency Mapping   3.2.4 Destination Mapping   3.3 COE Jobs  3.3.1 BOM Pre-Validation  ...">
+<meta name="description" content="Each Product ID has its own Bill of Materials (BOM). To open a BOM click on the icon against the said Product ID on the Product List tab. This would open a new browser tab, where the BOM can be...">
 <meta name="generator" content="bookdown 0.28 with bs4_book()">
 <meta property="og:title" content="Chapter 3 Bill of Materials | Style Master File - Application Reference">
 <meta property="og:type" content="book">
-<meta property="og:description" content="3.1 Header   3.2 Bill of Materials  3.2.1 Creating Line Items   3.2.2 Modifying Line Items   3.2.3 Size Dependency Mapping   3.2.4 Destination Mapping   3.3 COE Jobs  3.3.1 BOM Pre-Validation  ...">
+<meta property="og:description" content="Each Product ID has its own Bill of Materials (BOM). To open a BOM click on the icon against the said Product ID on the Product List tab. This would open a new browser tab, where the BOM can be...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 3 Bill of Materials | Style Master File - Application Reference">
-<meta name="twitter:description" content="3.1 Header   3.2 Bill of Materials  3.2.1 Creating Line Items   3.2.2 Modifying Line Items   3.2.3 Size Dependency Mapping   3.2.4 Destination Mapping   3.3 COE Jobs  3.3.1 BOM Pre-Validation  ...">
+<meta name="twitter:description" content="Each Product ID has its own Bill of Materials (BOM). To open a BOM click on the icon against the said Product ID on the Product List tab. This would open a new browser tab, where the BOM can be...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -72,54 +72,202 @@
 <h1>
 <span class="header-section-number">3</span> Bill of Materials<a class="anchor" aria-label="anchor" href="#bill-of-materials"><i class="fas fa-link"></i></a>
 </h1>
+<p>Each Product ID has its own Bill of Materials (BOM).</p>
+<p>To open a BOM click on the <i class="fa fa-pencil-square"></i> icon against the said Product ID on the Product List tab. This would open a new browser tab, where the BOM can be created / edited for the given Product ID.</p>
+<p>Once the new browser tab / window is opened it will show three tabs on the page.</p>
+<ol style="list-style-type: decimal">
+<li>Header</li>
+<li>Bill of Materials</li>
+<li>COE Jobs</li>
+</ol>
+<div class="inline-figure"><img src="images/paste-9726F7F5.png" style="width:50.0%"></div>
 <div id="header" class="section level2" number="3.1">
 <h2>
 <span class="header-section-number">3.1</span> Header<a class="anchor" aria-label="anchor" href="#header"><i class="fas fa-link"></i></a>
 </h2>
+<p>The header tab shows the header level details against the Product ID, which can be modified on this tab if required. All of the fields shown on the header tab are also available to update from the Product List tab on the main screen.</p>
+<div id="product-lock-unlock" class="section level3" number="3.1.1">
+<h3>
+<span class="header-section-number">3.1.1</span> Product Lock / Unlock<a class="anchor" aria-label="anchor" href="#product-lock-unlock"><i class="fas fa-link"></i></a>
+</h3>
+<p>There is a button provided here to Lock / Unlock Product BOM. This functionality is the same as explained under <a href="#Locking%20/%20Unlocking%20Product%20BOM(s)">Product List</a> with only one difference that it works only for the currently opened BOM.</p>
+</div>
+<div id="size-set" class="section level3" number="3.1.2">
+<h3>
+<span class="header-section-number">3.1.2</span> Size Set<a class="anchor" aria-label="anchor" href="#size-set"><i class="fas fa-link"></i></a>
+</h3>
+<p>There is a section given to Add / Remove Sizes and Base Sizes.</p>
+<div id="adding-sizes" class="section level4" number="3.1.2.1">
+<h4>
+<span class="header-section-number">3.1.2.1</span> Adding Sizes<a class="anchor" aria-label="anchor" href="#adding-sizes"><i class="fas fa-link"></i></a>
+</h4>
+<p>To add Sizes, type in the Sizes you wish to add separated by comma(,) and click on the Add button.</p>
+<div class="inline-figure"><img src="images/Add%20Sizes.gif" style="width:100.0%"></div>
+</div>
+<div id="removing-sizes" class="section level4" number="3.1.2.2">
+<h4>
+<span class="header-section-number">3.1.2.2</span> Removing Sizes<a class="anchor" aria-label="anchor" href="#removing-sizes"><i class="fas fa-link"></i></a>
+</h4>
+<p>To remove Sizes, type in the Sizes you wish to remove separated by comma(,) and click on the Remove button.</p>
+<div class="inline-figure"><img src="images/Remove%20Sizes.gif" style="width:100.0%"></div>
+</div>
+<div id="size-sequence" class="section level4" number="3.1.2.3">
+<h4>
+<span class="header-section-number">3.1.2.3</span> Size Sequence<a class="anchor" aria-label="anchor" href="#size-sequence"><i class="fas fa-link"></i></a>
+</h4>
+<p>Over 20,000 sizes have already been registered in the system in the correct sequence from smallest to largest. Irrespective of whichever sequence one adds the sizes, after ‘Saving’, the sequences will get automatically corrected to show the smallest size first and the largest at the end.</p>
+<p>In case if there are any new sizes which do not appear in the correct sequence, then please get in touch with the IT team to add those sizes into the Standard Size list.</p>
+</div>
+</div>
 </div>
 <div id="bill-of-materials-1" class="section level2" number="3.2">
 <h2>
 <span class="header-section-number">3.2</span> Bill of Materials<a class="anchor" aria-label="anchor" href="#bill-of-materials-1"><i class="fas fa-link"></i></a>
 </h2>
-<div id="creating-line-items" class="section level3" number="3.2.1">
+<p>Bill of Materials tab is the place where individual Raw Material items can be added / amended / removed.</p>
+<p><strong><em>Please note: After adding / updating the BOM, please do not forget to ‘Save’</em></strong></p>
+<div id="creating-modifying-bom-line-items" class="section level3" number="3.2.1">
 <h3>
-<span class="header-section-number">3.2.1</span> Creating Line Items<a class="anchor" aria-label="anchor" href="#creating-line-items"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.2.1</span> Creating / Modifying BOM Line Items<a class="anchor" aria-label="anchor" href="#creating-modifying-bom-line-items"><i class="fas fa-link"></i></a>
 </h3>
+<p>To create / modify BOM line item(s), there two possible methods</p>
+<ol style="list-style-type: decimal">
+<li>
+<p>By typing on the Excel-like grid on the screen</p>
+<p>Just like excel, type in or copy-paste from another source into the excel-like grid on the screen to update line items. If you wish to add more rows, go to the last row and press ‘Enter’ or right-click on the one of the row numbers and click on ‘Add new Row Before’ or ‘Add new Row after’ button.</p>
+</li>
+<li>
+<p>By uploading an Excel file</p>
+<div class="inline-figure"><img src="images/paste-2F1C634F.png" style="width:100.0%"></div>
+<p>On the screen, there is a ‘Download Excel’ button which downloads the BOM in Excel format.</p>
+<p>Once downloaded, one can add / amend the required line items on the downloaded excel file.</p>
+<p>Update the new line items or modify existing ones on the BOM excel file and then upload it into the system using the ‘Upload BOM Excel’ option.</p>
+<p>Few points to note when adding / amending line items on the Excel file</p>
+<ul>
+<li><p>Do not change column names</p></li>
+<li><p>Do not add new rows above the header row</p></li>
+<li><p>Make sure Product ID column is updated with the correct Product ID. Do not leave the Product ID blank</p></li>
+<li><p>To add new line items, leave the Item ID blank</p></li>
+<li><p>To amend existing items, ensure that Item ID is not blank</p></li>
+<li><p>Do not change the Item ID, it is a system generated number</p></li>
+</ul>
+</li>
+</ol>
 </div>
-<div id="modifying-line-items" class="section level3" number="3.2.2">
+<div id="removing-bom-line-items" class="section level3" number="3.2.2">
 <h3>
-<span class="header-section-number">3.2.2</span> Modifying Line Items<a class="anchor" aria-label="anchor" href="#modifying-line-items"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.2.2</span> Removing BOM Line Items<a class="anchor" aria-label="anchor" href="#removing-bom-line-items"><i class="fas fa-link"></i></a>
 </h3>
+<p>To remove BOM line items, two possible methods can be used</p>
+<ol style="list-style-type: decimal">
+<li>
+<p>On the screen</p>
+<p>On the BOM grid, make the line item you wish to remove ‘blank’ and then press ‘Save’ button. This would remove the BOM item.</p>
+</li>
+<li>
+<p>Using Excel upload</p>
+<p>On the downloaded excel, make the lien item you wish to remove ‘blank’, only leaving the Product ID and the Item ID columns filled. Then upload the excel file and ‘Save’ to remove the said line item.</p>
+</li>
+</ol>
 </div>
 <div id="size-dependency-mapping" class="section level3" number="3.2.3">
 <h3>
 <span class="header-section-number">3.2.3</span> Size Dependency Mapping<a class="anchor" aria-label="anchor" href="#size-dependency-mapping"><i class="fas fa-link"></i></a>
 </h3>
+<p>Size Dependency can be mapped against each line item, if required.</p>
+<p>To map the Size Dependency against any item, first mark the Size Dependency column against that line as ‘TABLE’.</p>
+<p>Once Size Dependency is updated as Table, Sizes can be mapped by</p>
+<ul>
+<li><p>Typing into the ‘Garment Size’ column, separated by comma(,)</p></li>
+<li><p>Marking in the Size Dependency grid located below the BOM grid on the screen</p></li>
+<li><p>Size Dependency can also be updated in Excel and uploaded as part of the BOM</p></li>
+</ul>
+<p>Please note: System will only allow to map any Sizes which have been added on the Size Set.</p>
 </div>
 <div id="destination-mapping" class="section level3" number="3.2.4">
 <h3>
 <span class="header-section-number">3.2.4</span> Destination Mapping<a class="anchor" aria-label="anchor" href="#destination-mapping"><i class="fas fa-link"></i></a>
 </h3>
+<p>Destinations can be mapped against each line item, if required.</p>
+<p>To map the Destinations against any item, first mark the ‘Destination Spec’ column against that line as ‘Yes’.</p>
+<p>Once Destination Spec is updated as ‘Yes’, Destinations can be mapped by</p>
+<ul>
+<li><p>Typing into the ‘Destination’ column, separated by comma(,)</p></li>
+<li><p>Marking in the ‘Destination Mapping’ grid located below the BOM grid on the screen</p></li>
+<li><p>Destinations can also be updated in Excel and uploaded as part of the BOM</p></li>
+</ul>
+<p>Please note: System will only allow to map any Destinations which are available on the WFX system. If typing, make sure to type the spellings exactly as defined in WFX.</p>
+</div>
+<div id="process-items" class="section level3" number="3.2.5">
+<h3>
+<span class="header-section-number">3.2.5</span> Process Items<a class="anchor" aria-label="anchor" href="#process-items"><i class="fas fa-link"></i></a>
+</h3>
+<p>To specify Process Items on the BOM…</p>
+<ol style="list-style-type: decimal">
+<li>Create the ‘Final’ RM Item on the BOM and note the ‘Item ID’ of the final RM Item</li>
+<li>Add the process items as regular line items on the BOM</li>
+<li>Against the process items, on the ‘Req for Item’ column, update the ‘Item ID’ of the Final Item, hence linking them together</li>
+<li>Make sure to update the required columns such as Process Type, Process Rate etc.
+<ul>
+<li>On the Process Type column, make sure the WFX ‘Process Code’ is also added</li>
+</ul>
+</li>
+</ol>
+<p>Process Items’ mapping can also be done using the Excel upload file.</p>
+</div>
+<div id="copying-bom-from-another-product" class="section level3" number="3.2.6">
+<h3>
+<span class="header-section-number">3.2.6</span> Copying BOM from Another Product<a class="anchor" aria-label="anchor" href="#copying-bom-from-another-product"><i class="fas fa-link"></i></a>
+</h3>
+<p>Most of the times, Customers place orders for multiple colors for each Style. Since the BOM(s) for each color has only very few differences, it is quite helpful to be able to copy BOM(s) from one Product ID to another.</p>
+<p>To copy a BOM</p>
+<ol style="list-style-type: decimal">
+<li><p>Open the BOM for the Product ID to which you wish to copy</p></li>
+<li>
+<p>Then from the ‘Copy BOM from Style No’ drop down select the Style-Season-Color from which you wish to copy the BOM</p>
+<div class="inline-figure"><img src="images/paste-34BD4A6B.png" width="347" height="72"></div>
+</li>
+<li>
+<p>Once selected, click on the Copy button</p>
+<div class="inline-figure"><img src="images/paste-0D3C8F4F.png" width="70"></div>
+</li>
+<li><p>After this, make the required changes to the BOM and press ‘Save’</p></li>
+</ol>
 </div>
 </div>
 <div id="coe-jobs" class="section level2" number="3.3">
 <h2>
 <span class="header-section-number">3.3</span> COE Jobs<a class="anchor" aria-label="anchor" href="#coe-jobs"><i class="fas fa-link"></i></a>
 </h2>
+<p>COE Jobs tab provides the facility to be able to easily send jobs to the COE team for Style + Cost Sheet creation or for Cost Sheet Amendment.</p>
 <div id="bom-pre-validation" class="section level3" number="3.3.1">
 <h3>
 <span class="header-section-number">3.3.1</span> BOM Pre-Validation<a class="anchor" aria-label="anchor" href="#bom-pre-validation"><i class="fas fa-link"></i></a>
 </h3>
+<p>Before any job is sent to COE, the application Pre-Validates the data being sent to COE. If there are any discrepancies found those will be listed on the screen and a job will not be sent to COE.</p>
 </div>
 <div id="sending-job-to-coe" class="section level3" number="3.3.2">
 <h3>
 <span class="header-section-number">3.3.2</span> Sending Job to COE<a class="anchor" aria-label="anchor" href="#sending-job-to-coe"><i class="fas fa-link"></i></a>
 </h3>
+<p>To send a job to COE, simply click on the ‘Send BOM to COE’ button.</p>
+<p>If it is the first job against the Product ID, a ‘Style+Cost Sheet Creation’ job will be sent.</p>
+<p>If it is not the first job, then a ‘Cost Sheet Amendment’ job will be sent.</p>
+<p>Further, system also detects whether there were any changes made against the Product ID after sending the Previous Job to COE. If there were no changes recorded, then the system will not allow to send a new job to the COE team.</p>
+<div class="inline-figure"><img src="images/paste-2ED6ACB7.png" width="516"></div>
 </div>
 <div id="cancelling-job" class="section level3" number="3.3.3">
 <h3>
 <span class="header-section-number">3.3.3</span> Cancelling Job<a class="anchor" aria-label="anchor" href="#cancelling-job"><i class="fas fa-link"></i></a>
 </h3>
+<p>The latest Job sent to the COE team can be cancelled using this screen, if the Job Status is ‘Pending Approval’.</p>
+<p>If the Job Status is anything other than ‘Pending Approval’, that job cannot be cancelled.</p>
+</div>
+<div id="error-correction" class="section level3" number="3.3.4">
+<h3>
+<span class="header-section-number">3.3.4</span> Error Correction<a class="anchor" aria-label="anchor" href="#error-correction"><i class="fas fa-link"></i></a>
+</h3>
+<p>On the COE Job Tracker, there is a job status ‘Error Correction’. COE team can mark the job as ‘Error Correction’. If the latest job sent against a Product ID is marked as ‘Error Correction’, when the ‘Send BOM to COE’ button is clicked, it would not send a new job to COE, but would rather amend the existing job adding a revised attachment to the same.</p>
 
 </div>
 </div>
@@ -131,13 +279,20 @@
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#bill-of-materials"><span class="header-section-number">3</span> Bill of Materials</a></li>
-<li><a class="nav-link" href="#header"><span class="header-section-number">3.1</span> Header</a></li>
+<li>
+<a class="nav-link" href="#header"><span class="header-section-number">3.1</span> Header</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#product-lock-unlock"><span class="header-section-number">3.1.1</span> Product Lock / Unlock</a></li>
+<li><a class="nav-link" href="#size-set"><span class="header-section-number">3.1.2</span> Size Set</a></li>
+</ul>
+</li>
 <li>
 <a class="nav-link" href="#bill-of-materials-1"><span class="header-section-number">3.2</span> Bill of Materials</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#creating-line-items"><span class="header-section-number">3.2.1</span> Creating Line Items</a></li>
-<li><a class="nav-link" href="#modifying-line-items"><span class="header-section-number">3.2.2</span> Modifying Line Items</a></li>
+<li><a class="nav-link" href="#creating-modifying-bom-line-items"><span class="header-section-number">3.2.1</span> Creating / Modifying BOM Line Items</a></li>
+<li><a class="nav-link" href="#removing-bom-line-items"><span class="header-section-number">3.2.2</span> Removing BOM Line Items</a></li>
 <li><a class="nav-link" href="#size-dependency-mapping"><span class="header-section-number">3.2.3</span> Size Dependency Mapping</a></li>
 <li><a class="nav-link" href="#destination-mapping"><span class="header-section-number">3.2.4</span> Destination Mapping</a></li>
+<li><a class="nav-link" href="#process-items"><span class="header-section-number">3.2.5</span> Process Items</a></li>
+<li><a class="nav-link" href="#copying-bom-from-another-product"><span class="header-section-number">3.2.6</span> Copying BOM from Another Product</a></li>
 </ul>
 </li>
 <li>
@@ -145,6 +300,7 @@
 <li><a class="nav-link" href="#bom-pre-validation"><span class="header-section-number">3.3.1</span> BOM Pre-Validation</a></li>
 <li><a class="nav-link" href="#sending-job-to-coe"><span class="header-section-number">3.3.2</span> Sending Job to COE</a></li>
 <li><a class="nav-link" href="#cancelling-job"><span class="header-section-number">3.3.3</span> Cancelling Job</a></li>
+<li><a class="nav-link" href="#error-correction"><span class="header-section-number">3.3.4</span> Error Correction</a></li>
 </ul>
 </li>
 </ul>
@@ -163,7 +319,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Style Master File - Application Reference</strong>" was written by Nitish Kohli. It was last built on 2022-08-18.</p>
+    <p>"<strong>Style Master File - Application Reference</strong>" was written by Nitish Kohli. It was last built on 2022-08-20.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
