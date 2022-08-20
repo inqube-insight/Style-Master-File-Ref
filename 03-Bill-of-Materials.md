@@ -182,4 +182,4 @@ If the Job Status is anything other than 'Pending Approval', that job cannot be 
 
 ### Error Correction
 
-On the COE Job Tracker, there is a job status 'Error Correction'. COE team can mark the job as 'Error Correction'. If the latest job sent against a Product ID is marked as 'Error Correction', when the 'Send BOM to COE' button is clicked, it would not send a new job to COE, but would rather amend the existing job adding a revised attachment to the same.
+On the COE Job Tracker, there is a job status 'Error Correction'. COE team can mark the job as 'Error Correction'. If the latest job sent against a Product ID is marked as 'Error Correction', when the 'Send BOM to COE' button is clicked, it would not send a new job to COE, but would rather amend the existing job, adding a revised attachment to the same.

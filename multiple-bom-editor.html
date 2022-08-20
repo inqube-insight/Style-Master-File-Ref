@@ -6,20 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 9 Multiple BOM Editor | Style Master File - Application Reference</title>
 <meta name="author" content="Nitish Kohli">
-<meta name="description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta name="description" content="The multiple BOM editor tab functions in the same way as the Bill of Materials for individual Product IDs, with one major difference. This tab allows to update multiple BOMs at the same time...">
 <meta name="generator" content="bookdown 0.28 with bs4_book()">
 <meta property="og:title" content="Chapter 9 Multiple BOM Editor | Style Master File - Application Reference">
 <meta property="og:type" content="book">
-<meta property="og:description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta property="og:description" content="The multiple BOM editor tab functions in the same way as the Bill of Materials for individual Product IDs, with one major difference. This tab allows to update multiple BOMs at the same time...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 9 Multiple BOM Editor | Style Master File - Application Reference">
-<meta name="twitter:description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta name="twitter:description" content="The multiple BOM editor tab functions in the same way as the Bill of Materials for individual Product IDs, with one major difference. This tab allows to update multiple BOMs at the same time...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -60,13 +54,9 @@ set in the _output.yml file.&lt;/p&gt;">
 <li><a class="" href="thread-yy.html"><span class="header-section-number">8</span> Thread YY</a></li>
 <li><a class="active" href="multiple-bom-editor.html"><span class="header-section-number">9</span> Multiple BOM Editor</a></li>
 <li><a class="" href="coe-jobs-1.html"><span class="header-section-number">10</span> COE Jobs</a></li>
-<li><a class="" href="general-guidelines.html"><span class="header-section-number">11</span> General Guidelines</a></li>
-<li><a class="" href="lululemon-order-split.html"><span class="header-section-number">12</span> Lululemon Order Split</a></li>
-<li><a class="" href="dashboard.html"><span class="header-section-number">13</span> Dashboard</a></li>
-<li><a class="" href="wfx-bom-validation.html"><span class="header-section-number">14</span> WFX BOM Validation</a></li>
-<li><a class="" href="admin.html"><span class="header-section-number">15</span> Admin</a></li>
-<li><a class="" href="faqs-troubleshooting.html"><span class="header-section-number">16</span> FAQs / Troubleshooting</a></li>
-<li><a class="" href="potential-future-upgrades.html"><span class="header-section-number">17</span> Potential Future Upgrades</a></li>
+<li><a class="" href="dashboard.html"><span class="header-section-number">11</span> Dashboard</a></li>
+<li><a class="" href="wfx-bom-validation.html"><span class="header-section-number">12</span> WFX BOM Validation</a></li>
+<li><a class="" href="admin.html"><span class="header-section-number">13</span> Admin</a></li>
 </ul>
 
         <div class="book-extra">
@@ -78,14 +68,44 @@ set in the _output.yml file.&lt;/p&gt;">
 <h1>
 <span class="header-section-number">9</span> Multiple BOM Editor<a class="anchor" aria-label="anchor" href="#multiple-bom-editor"><i class="fas fa-link"></i></a>
 </h1>
+<p>The multiple BOM editor tab functions in the same way as the <a href="bill-of-materials.html#bill-of-materials-1">Bill of Materials</a> for individual Product IDs, with one major difference.</p>
+<p>This tab allows to update multiple BOMs at the same time without having to open each Product ID one by one.</p>
+<div id="filters-4" class="section level2" number="9.1">
+<h2>
+<span class="header-section-number">9.1</span> Filters<a class="anchor" aria-label="anchor" href="#filters-4"><i class="fas fa-link"></i></a>
+</h2>
+<p>Multiple BOM Editor tab allows the users to filter based on</p>
+<div class="inline-figure"><img src="images/paste-A1DAF3CC.png" style="width:100.0%"></div>
+<ol style="list-style-type: decimal">
+<li>Customer</li>
+<li>Season</li>
+<li>Program - Style</li>
+<li>Garment Color</li>
+<li>Section</li>
+<li>Sub Category</li>
+<li>Supplier</li>
+<li>WFX Code</li>
+</ol>
+</div>
+<div id="adding-updating-removing-bom-items" class="section level2" number="9.2">
+<h2>
+<span class="header-section-number">9.2</span> Adding / Updating / Removing BOM Items<a class="anchor" aria-label="anchor" href="#adding-updating-removing-bom-items"><i class="fas fa-link"></i></a>
+</h2>
+<p>This functions in the same way as the Bill of Materials.</p>
+<p>Please refer the documentation on the <a href="bill-of-materials.html#bill-of-materials-1">Bill of Materials</a> page.</p>
 
+</div>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="thread-yy.html"><span class="header-section-number">8</span> Thread YY</a></div>
 <div class="next"><a href="coe-jobs-1.html"><span class="header-section-number">10</span> COE Jobs</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#multiple-bom-editor"><span class="header-section-number">9</span> Multiple BOM Editor</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#multiple-bom-editor"><span class="header-section-number">9</span> Multiple BOM Editor</a></li>
+<li><a class="nav-link" href="#filters-4"><span class="header-section-number">9.1</span> Filters</a></li>
+<li><a class="nav-link" href="#adding-updating-removing-bom-items"><span class="header-section-number">9.2</span> Adding / Updating / Removing BOM Items</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
