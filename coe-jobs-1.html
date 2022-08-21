@@ -6,25 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 10 COE Jobs | Style Master File - Application Reference</title>
 <meta name="author" content="Nitish Kohli">
-<meta name="description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta name="description" content="The COE Jobs tab on the main screen is designed to be able to send multiple Jobs to COE at a time with ease. This tab allows to send 2 types of COE and is also used for getting a confirmation from...">
 <meta name="generator" content="bookdown 0.28 with bs4_book()">
 <meta property="og:title" content="Chapter 10 COE Jobs | Style Master File - Application Reference">
 <meta property="og:type" content="book">
-<meta property="og:description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta property="og:description" content="The COE Jobs tab on the main screen is designed to be able to send multiple Jobs to COE at a time with ease. This tab allows to send 2 types of COE and is also used for getting a confirmation from...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 10 COE Jobs | Style Master File - Application Reference">
-<meta name="twitter:description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta name="twitter:description" content="The COE Jobs tab on the main screen is designed to be able to send multiple Jobs to COE at a time with ease. This tab allows to send 2 types of COE and is also used for getting a confirmation from...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script><script src="libs/viz-1.8.2/viz.js"></script><link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
-<script src="libs/grViz-binding-1.0.9/grViz.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+<script src="libs/grViz-binding-1.0.9/grViz.js"></script><link href="libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet">
+<link href="libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
@@ -74,14 +70,326 @@ set in the _output.yml file.&lt;/p&gt;">
 <h1>
 <span class="header-section-number">10</span> COE Jobs<a class="anchor" aria-label="anchor" href="#coe-jobs-1"><i class="fas fa-link"></i></a>
 </h1>
-
+<p>The COE Jobs tab on the main screen is designed to be able to send multiple Jobs to COE at a time with ease.</p>
+<p>This tab allows to send 2 types of COE and is also used for getting a confirmation from the Cost Engineering team of having updated the Bulk YY.</p>
+<ol style="list-style-type: decimal">
+<li><a href="coe-jobs-1.html#cost-sheet-amendment">Cost Sheet Amendment</a></li>
+<li><a href="coe-jobs-1.html#oc-creation">OC Creation</a></li>
+<li><a href="coe-jobs-1.html#yy-confirmation">YY Confirmation</a></li>
+</ol>
+<div id="how-to-use" class="section level2" number="10.1">
+<h2>
+<span class="header-section-number">10.1</span> How to Use<a class="anchor" aria-label="anchor" href="#how-to-use"><i class="fas fa-link"></i></a>
+</h2>
+<div id="sending-jobs-to-coe" class="section level3" number="10.1.1">
+<h3>
+<span class="header-section-number">10.1.1</span> Sending Job(s) to COE<a class="anchor" aria-label="anchor" href="#sending-jobs-to-coe"><i class="fas fa-link"></i></a>
+</h3>
+<p>To send Job(s) to COE team using this tab</p>
+<ol style="list-style-type: decimal">
+<li>Select Customer</li>
+<li>Select Season
+<ul>
+<li>This will populate the Program, Style and Garment Color drop-downs</li>
+</ul>
+</li>
+<li>Select the Job Type
+<ul>
+<li>This will populate a table on the screen</li>
+</ul>
+</li>
+<li>Select the Product ID(s) for which to send Job to COE</li>
+<li>Click on the ‘Send Job(s) to COE’ button</li>
+</ol>
+<p>This would create Jobs on the COE Job Tracker workflow application made with Microsoft O365 Power Apps.</p>
+</div>
+<div id="cancelling-jobs" class="section level3" number="10.1.2">
+<h3>
+<span class="header-section-number">10.1.2</span> Cancelling Jobs<a class="anchor" aria-label="anchor" href="#cancelling-jobs"><i class="fas fa-link"></i></a>
+</h3>
+<p>If the latest ‘Cost Sheet Amendment’ job against a Product ID is still in the ‘Pending Approval’ status in COE Job Tracker, then the job can be cancelled from this screen.</p>
+<p>To Cancel Job(s) sent to COE Team</p>
+<ol style="list-style-type: decimal">
+<li>Select Customer</li>
+<li>Select Season
+<ul>
+<li>This will populate the Program, Style and Garment Color drop-downs</li>
+</ul>
+</li>
+<li>Select the Job Type
+<ul>
+<li><p>This will populate a table on the screen</p></li>
+<li><p>The table will show the Latest Job Id, Job Status, Job Type, Created By and Job Created Datetime columns</p></li>
+<li><p>A job will get cancelled only if the Job Status is ‘Pending Approval’</p></li>
+</ul>
+</li>
+<li>Select the Product ID(s) for which to cancel the last Job</li>
+<li>Click on the ‘Cancel Job(s)’ button</li>
+</ol>
+</div>
+</div>
+<div id="cost-sheet-amendment" class="section level2" number="10.2">
+<h2>
+<span class="header-section-number">10.2</span> Cost Sheet Amendment<a class="anchor" aria-label="anchor" href="#cost-sheet-amendment"><i class="fas fa-link"></i></a>
+</h2>
+<p>Cost Sheet Amendment type of Jobs can be sent to COE using the COE Jobs tab. This basically sends Jobs to COE for updating the BOM in WFX.</p>
+<p>Once Cost Sheet Amendment Job type is selected, the table on the screen will show like below.</p>
+<div class="inline-figure"><img src="images/paste-133F699C.png" style="width:100.0%"></div>
+<div id="columns-on-the-table" class="section level3" number="10.2.1">
+<h3>
+<span class="header-section-number">10.2.1</span> Columns on the Table<a class="anchor" aria-label="anchor" href="#columns-on-the-table"><i class="fas fa-link"></i></a>
+</h3>
+<p>Each column on this table has its relevance and functionality, please refer below</p>
+<ol style="list-style-type: decimal">
+<li>Product ID, Program, Style, Garment Color Code, Garment Color Name
+<ul>
+<li>These columns are for user’s reference to understand which Style each row represents</li>
+</ul>
+</li>
+<li>Validation Errors
+<ul>
+<li>This shows the number of BOM Pre-Validation Errors currently against each Product ID</li>
+</ul>
+</li>
+<li>BOM Lock Status
+<ul>
+<li>Shows whether the BOM is Locked or Unlocked as updated either from the <a href="product-list.html#product-list">Product List</a> tab or from the <a href="bill-of-materials.html#bill-of-materials-1">Bill of Materials</a>
+</li>
+</ul>
+</li>
+<li>YY Confirm Status
+<ul>
+<li>Shows whether the YY has been Confirmed or Not Confirmed by the Cost Engineering team</li>
+</ul>
+</li>
+<li>Updated Fabric YY
+<ul>
+<li>Shows the number of Fabric Line Items for which Bulk YY or Bulk Wastage was updated after sending the previous job to COE</li>
+</ul>
+</li>
+<li>Updated Trim YY
+<ul>
+<li>Shows the number of Trim Line Items for which Bulk YY or Bulk Wastage was updated after sending the previous job to COE</li>
+</ul>
+</li>
+<li>Updated Thread YY
+<ul>
+<li>Shows the number of Thread Line Items for which Bulk YY or Bulk Wastage was updated after sending the previous job to COE</li>
+</ul>
+</li>
+<li>Updated BOM Items
+<ul>
+<li>Shows the number of BOM Line Items for which anything was updated after sending the previous job to COE</li>
+</ul>
+</li>
+<li>Last Updated Datetime
+<ul>
+<li>Shows the Date &amp; Time when the last update was done</li>
+</ul>
+</li>
+<li>Latest Job Id, Job Status, Job Type, Created By, Job Created Datetime
+<ul>
+<li>Shows the details of the previous job sent to COE, for reference</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="validations-before-sending-job-to-coe" class="section level3" number="10.2.2">
+<h3>
+<span class="header-section-number">10.2.2</span> Validations before Sending Job to COE<a class="anchor" aria-label="anchor" href="#validations-before-sending-job-to-coe"><i class="fas fa-link"></i></a>
+</h3>
+<p>The following points are validated within the screen before sending a job to COE. If any one of this conditions fails, then Job is not sent for that Product ID.</p>
+<ol style="list-style-type: decimal">
+<li><p>Validation Errors must be Zero (0) or Blank</p></li>
+<li><p>BOM Lock Status must be ‘Locked’</p></li>
+<li><p>YY Confirm Status must be ‘Confirmed’</p></li>
+<li>
+<p>Out of the 4 columns Updated Fabric YY, Updated Trim YY, Updated Thread YY and Updated BOM Items, at least one of the columns must have a number greater than Zero in it, meaning that there was actually an amendment done after the previously sent job</p>
+<ul>
+<li>This is to avoid sending jobs to COE with no amendments, hence wasting time and effort</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div id="oc-creation" class="section level2" number="10.3">
+<h2>
+<span class="header-section-number">10.3</span> OC Creation<a class="anchor" aria-label="anchor" href="#oc-creation"><i class="fas fa-link"></i></a>
+</h2>
+<p>OC Creation type of Jobs can be sent to COE using the COE Jobs tab. This sends Jobs to COE for creating OCs in the WFX system.</p>
+<p>Once OC Creation Job type is selected, the table on the screen will show like below.</p>
+<div class="inline-figure"><img src="images/paste-91714383.png" style="width:100.0%"></div>
+<div id="columns-on-the-table-1" class="section level3" number="10.3.1">
+<h3>
+<span class="header-section-number">10.3.1</span> Columns on the Table<a class="anchor" aria-label="anchor" href="#columns-on-the-table-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>Each column on this table has its relevance and functionality, please refer below</p>
+<ol style="list-style-type: decimal">
+<li>
+<p>Product ID, Program, Style, Garment Color Code, Garment Color Name</p>
+<ul>
+<li>These columns are for user’s reference to understand which Style each row represents</li>
+</ul>
+</li>
+<li>
+<p>Style Code Verified</p>
+<ul>
+<li>Shows either <i class="fa fa-circle-check" role="presentation" aria-label="circle-check icon" style="color:green;"></i> or <i class="fa fa-circle-xmark" role="presentation" aria-label="circle-xmark icon" style="color:red;"></i>
+</li>
+</ul>
+</li>
+<li>
+<p>Sizes Verified</p>
+<ul>
+<li>Shows either <i class="fa fa-circle-check" role="presentation" aria-label="circle-check icon" style="color:green;"></i> or <i class="fa fa-circle-xmark" role="presentation" aria-label="circle-xmark icon" style="color:red;"></i>
+</li>
+</ul>
+</li>
+<li>
+<p>New Orders</p>
+<ul>
+<li>Shows the number of Orders on the <a href="orderbook.html#orderbook">Orderbook</a> tab newly created after sending the previous Job to COE</li>
+</ul>
+</li>
+<li>
+<p>Quantity</p>
+<ul>
+<li>Shows the Total Quantity of the newly created Orders</li>
+</ul>
+</li>
+<li>
+<p>Order Creation Datetime</p>
+<ul>
+<li>Shows the latest Created Datetime of the newly created Orders</li>
+</ul>
+</li>
+<li>
+<p>Latest Job Id, Job Status, Job Type, Created By, Job Created Datetime</p>
+<ul>
+<li>Shows the details of the previous job sent to COE, for reference</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="validations-before-sending-job-to-coe-1" class="section level3" number="10.3.2">
+<h3>
+<span class="header-section-number">10.3.2</span> Validations before Sending Job to COE<a class="anchor" aria-label="anchor" href="#validations-before-sending-job-to-coe-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>The following points are validated within the screen before sending a job to COE. If any one of this conditions fails, then Job is not sent for that Product ID.</p>
+<ol style="list-style-type: decimal">
+<li>
+<p>Style Code Verified must be <i class="fa fa-circle-check" role="presentation" aria-label="circle-check icon" style="color:green;"></i></p>
+<ul>
+<li><p>Style Codes are updated by the COE team against the Style + Cost Sheet Creation jobs in the COE Job Tracker</p></li>
+<li><p>Once COE has updated, the Style Codes get automatically integrated to the SMF App</p></li>
+<li><p>It can take up to 30 minutes after Style + Cost Sheet creation job has been completed to get integrated</p></li>
+</ul>
+</li>
+<li>
+<p>Sizes Verified must be <i class="fa fa-circle-check" role="presentation" aria-label="circle-check icon" style="color:green;"></i></p>
+<ul>
+<li><p>Sizes get verified between SMF Garment Size and WFX Sizes assigned against the above Style Code</p></li>
+<li><p>Normally, Sizes Verified will get integrated every day at around 5 am</p></li>
+<li><p>Hence, it can take up to the next day after a Style Code is created in WFX to integrate with the SMF App</p></li>
+</ul>
+</li>
+<li>
+<p>New Orders</p>
+<ul>
+<li>
+<p>New Orders column must have a value greater than Zero, meaning that there was actually atleast 1 new Order created after the previously sent job</p>
+<ul>
+<li>This is to avoid sending Blank jobs to COE</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div id="yy-confirmation" class="section level2" number="10.4">
+<h2>
+<span class="header-section-number">10.4</span> YY Confirmation<a class="anchor" aria-label="anchor" href="#yy-confirmation"><i class="fas fa-link"></i></a>
+</h2>
+<p>YY Confirmation is not really a COE Job, but rather a step provided for the Cost Engineering team to confirm that Bulk YY has been updated in the system, and Bulk / Development Merchants can proceed in sending the YY / Cost Sheet Amendment jobs to COE.</p>
+<p>This additional step was provided to make it clear which Product IDs have been given a ‘green light’ by the Cost Engineering team during the Buy processing.</p>
+<div class="inline-figure"><img src="images/paste-AAFAB7E7.png" style="width:100.0%"></div>
+<div id="confirming-yy-update" class="section level3" number="10.4.1">
+<h3>
+<span class="header-section-number">10.4.1</span> Confirming YY Update<a class="anchor" aria-label="anchor" href="#confirming-yy-update"><i class="fas fa-link"></i></a>
+</h3>
+<p>To Confirm YY Update, proceed as follows</p>
+<ol style="list-style-type: decimal">
+<li>Select Customer</li>
+<li>Select Season
+<ul>
+<li>This will populate the Program, Style and Garment Color drop-downs</li>
+</ul>
+</li>
+<li>Select the Job Type as ‘YY Confirmation’
+<ul>
+<li>This option is only visible to the Cost Engineering team</li>
+</ul>
+</li>
+<li>Select the Product ID(s) for which to Confirm YY</li>
+<li>Click on the ‘Confirm YY Update’ button</li>
+</ol>
+</div>
+<div id="un-confirming-yy-update" class="section level3" number="10.4.2">
+<h3>
+<span class="header-section-number">10.4.2</span> Un-Confirming YY Update<a class="anchor" aria-label="anchor" href="#un-confirming-yy-update"><i class="fas fa-link"></i></a>
+</h3>
+<p>To Un-Confirm YY Update, proceed as follows</p>
+<ol style="list-style-type: decimal">
+<li>Select Customer</li>
+<li>Select Season
+<ul>
+<li>This will populate the Program, Style and Garment Color drop-downs</li>
+</ul>
+</li>
+<li>Select the Job Type as ‘YY Confirmation’
+<ul>
+<li>This option is only visible to the Cost Engineering team</li>
+</ul>
+</li>
+<li>Select the Product ID(s) for which to Confirm YY</li>
+<li>Click on the ‘Un-Confirm YY Update’ button</li>
+</ol>
+</div>
+</div>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="multiple-bom-editor.html"><span class="header-section-number">9</span> Multiple BOM Editor</a></div>
 <div class="next"><a href="dashboard.html"><span class="header-section-number">11</span> Dashboard</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#coe-jobs-1"><span class="header-section-number">10</span> COE Jobs</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#coe-jobs-1"><span class="header-section-number">10</span> COE Jobs</a></li>
+<li>
+<a class="nav-link" href="#how-to-use"><span class="header-section-number">10.1</span> How to Use</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#sending-jobs-to-coe"><span class="header-section-number">10.1.1</span> Sending Job(s) to COE</a></li>
+<li><a class="nav-link" href="#cancelling-jobs"><span class="header-section-number">10.1.2</span> Cancelling Jobs</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#cost-sheet-amendment"><span class="header-section-number">10.2</span> Cost Sheet Amendment</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#columns-on-the-table"><span class="header-section-number">10.2.1</span> Columns on the Table</a></li>
+<li><a class="nav-link" href="#validations-before-sending-job-to-coe"><span class="header-section-number">10.2.2</span> Validations before Sending Job to COE</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#oc-creation"><span class="header-section-number">10.3</span> OC Creation</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#columns-on-the-table-1"><span class="header-section-number">10.3.1</span> Columns on the Table</a></li>
+<li><a class="nav-link" href="#validations-before-sending-job-to-coe-1"><span class="header-section-number">10.3.2</span> Validations before Sending Job to COE</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#yy-confirmation"><span class="header-section-number">10.4</span> YY Confirmation</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#confirming-yy-update"><span class="header-section-number">10.4.1</span> Confirming YY Update</a></li>
+<li><a class="nav-link" href="#un-confirming-yy-update"><span class="header-section-number">10.4.2</span> Un-Confirming YY Update</a></li>
+</ul>
+</li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
