@@ -55,7 +55,13 @@ fields-to-update-1
 calculated-fields-1
 thread-yy
 lululemon
+pe-threads
+how-to-update-1
 all-other-customers
+fields-to-update---on-product-list
+fields-to-update---on-thread-yy---ie
+calculated-fields-2
+how-to-update-2
 multiple-bom-editor
 filters-5
 adding-updating-removing-bom-items

@@ -10,8 +10,8 @@ The Bulk Cons tab is designed to provide consolidated information for the Cost E
 
 
 ```{=html}
-<div id="htmlwidget-4b4b0d77f28d4d3716ca" style="width:672px;height:250px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4b4b0d77f28d4d3716ca">{"x":{"diagram":"digraph {\n  graph [layout = dot, rankdir = LR]\n  \n  node [shape = rectangle]        \n  rec1 [label = \"Update BOM\n(Dev Merchant)\"]\n  rec2 [label = \"Upload Orderbook\n(Bulk Merchant)\"]\n  rec3 [label = \"Pattern Details\"]\n  rec4 [label = \"Update Bulk YY\"]\n  rec5 [label = \"Confirm Bulk YY Update\"]\n  rec6 [label = \"Send Bulk YY Update\nto COE\"]\n  \n  rec1, rec2, rec3 -> rec4 -> rec5 -> rec6\n  \n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-130e644372aca21ae9e6" style="width:672px;height:250px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-130e644372aca21ae9e6">{"x":{"diagram":"digraph {\n  graph [layout = dot, rankdir = LR]\n  \n  node [shape = rectangle]        \n  rec1 [label = \"Update BOM\n(Dev Merchant)\"]\n  rec2 [label = \"Upload Orderbook\n(Bulk Merchant)\"]\n  rec3 [label = \"Pattern Details\"]\n  rec4 [label = \"Update Bulk YY\"]\n  rec5 [label = \"Confirm Bulk YY Update\"]\n  rec6 [label = \"Send Bulk YY Update\nto COE\"]\n  \n  rec1, rec2, rec3 -> rec4 -> rec5 -> rec6\n  \n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 ```
 
 The Bulk Cons tab is further divided into 2 tabs

@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 8 Thread YY | Style Master File - Application Reference</title>
 <meta name="author" content="Nitish Kohli">
-<meta name="description" content="8.1 Lululemon   8.2 All other Customers">
+<meta name="description" content="To update Thread YY, there two different methods defined, one for Lululemon customer account and the second for all others Lululemon - tab on the main screen named ‘Thread YY’ All other Customers...">
 <meta name="generator" content="bookdown 0.28 with bs4_book()">
 <meta property="og:title" content="Chapter 8 Thread YY | Style Master File - Application Reference">
 <meta property="og:type" content="book">
-<meta property="og:description" content="8.1 Lululemon   8.2 All other Customers">
+<meta property="og:description" content="To update Thread YY, there two different methods defined, one for Lululemon customer account and the second for all others Lululemon - tab on the main screen named ‘Thread YY’ All other Customers...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 8 Thread YY | Style Master File - Application Reference">
-<meta name="twitter:description" content="8.1 Lululemon   8.2 All other Customers">
+<meta name="twitter:description" content="To update Thread YY, there two different methods defined, one for Lululemon customer account and the second for all others Lululemon - tab on the main screen named ‘Thread YY’ All other Customers...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -68,16 +68,170 @@
 <h1>
 <span class="header-section-number">8</span> Thread YY<a class="anchor" aria-label="anchor" href="#thread-yy"><i class="fas fa-link"></i></a>
 </h1>
+<p>To update Thread YY, there two different methods defined, one for Lululemon customer account and the second for all others</p>
+<ol style="list-style-type: decimal">
+<li>
+<a href="thread-yy.html#lululemon">Lululemon</a> - tab on the main screen named ‘Thread YY’</li>
+<li>
+<a href="thread-yy.html#all-other-customers">All other Customers</a> - tab on the main screen named ‘Thread YY - IE’</li>
+</ol>
 <div id="lululemon" class="section level2" number="8.1">
 <h2>
 <span class="header-section-number">8.1</span> Lululemon<a class="anchor" aria-label="anchor" href="#lululemon"><i class="fas fa-link"></i></a>
 </h2>
+<p>For the Lululemon account the Thread YY is updated into this system by the Development Merchant.</p>
+<p>The ‘Thread YY’ tab works in a similar way as the <a href="multiple-bom-editor.html#multiple-bom-editor">Multiple BOM Editor</a> tab and allows the users to Add / Update / Remove bom line items.</p>
+<p>The differences on the Thread YY tab as compared to the <a href="multiple-bom-editor.html#multiple-bom-editor">Multiple BOM Editor</a> tab are…</p>
+<ul>
+<li><p>Thread YY tab only works for Thread items</p></li>
+<li><p>Limited number of BOM columns, ones that are relevant for Thread items</p></li>
+<li><p>Shows the Total Order Quantity as updated on the <a href="orderbook.html#orderbook">Orderbook</a> tab by the Bulk Merchant - used for YY calculation</p></li>
+<li>
+<p>Merchant can update the No of Cones, YY shall be calculated based on No of Cones and Total Order Qty</p>
+<p><span class="math display">\[
+Thread YY = \frac{\text{No of Cones}}{\text{Total Order Qty}}
+\]</span></p>
+</li>
+</ul>
+<div class="inline-figure"><img src="images/paste-EFC70BCB.png" style="width:100.0%"></div>
+<div id="pe-threads" class="section level3" number="8.1.1">
+<h3>
+<span class="header-section-number">8.1.1</span> PE Threads<a class="anchor" aria-label="anchor" href="#pe-threads"><i class="fas fa-link"></i></a>
+</h3>
+<p>As a custom requirement, there is a feature available on the Thread YY tab to mark selected Thread Line Items as ‘PE Thread’.</p>
+<p>To update a Thread line item as a PE Thread, there is a column added at the right end of the grid, named ‘PE Thread’. Here, one can ‘check’ or ‘un-check’ the items.</p>
+<p>For any Thread Line item, if PE Thread is marked as checked, then in the background, system changes the following columns on the BOM</p>
+<ul>
+<li><p>Destination Spec = Yes</p></li>
+<li><p>Destination = PE Thread</p></li>
+</ul>
+<div class="inline-figure"><img src="images/paste-02011FBC.png" style="width:50.0%"></div>
+</div>
+<div id="how-to-update-1" class="section level3" number="8.1.2">
+<h3>
+<span class="header-section-number">8.1.2</span> How to Update<a class="anchor" aria-label="anchor" href="#how-to-update-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>To update Thread YY details…</p>
+<ol style="list-style-type: decimal">
+<li>Select a Customer</li>
+<li>Select a Season
+<ul>
+<li>All the Styles created within the Season will get listed</li>
+</ul>
+</li>
+<li>Apply any further filters as and when necessary</li>
+<li>Update the details by
+<ul>
+<li>
+<p>Typing into the excel-like grid on the screen</p>
+<p>OR</p>
+</li>
+<li><p>Download the details into excel by clicking on the ‘Download’ button</p></li>
+<li>
+<p>Update the details in Excel and Save the excel file</p>
+<ul>
+<li>Make sure not to edit / remove the Product ID and Item ID from the excel</li>
+</ul>
+</li>
+<li><p>Upload the Excel file back into the screen</p></li>
+</ul>
+</li>
+<li>Press the ‘Save’ button to Save the updated information</li>
+</ol>
+<p>If you are not fully clear, please refer to the documentation for <a href="multiple-bom-editor.html#multiple-bom-editor">Multiple BOM Editor</a>.</p>
+</div>
 </div>
 <div id="all-other-customers" class="section level2" number="8.2">
 <h2>
 <span class="header-section-number">8.2</span> All other Customers<a class="anchor" aria-label="anchor" href="#all-other-customers"><i class="fas fa-link"></i></a>
 </h2>
+<p>For all other Customer accounts, Thread YY is updated by the PDC IE team.</p>
+<p>For the PDC IE team, a separate tab named ‘Thread YY - IE’ is available on the main screen.</p>
+<p>The ‘Thread YY - IE’ tab allows the IE team members to update the Thread YY against already added Thread line items on the BOM.</p>
+<p>To show any thread on this tab, first the Development Merchant must add the relevant Thread items on the <a href="bill-of-materials.html#bill-of-materials-1">Bill of Materials</a>.</p>
+<ol style="list-style-type: decimal">
+<li>Add Thread Line Items on the <a href="bill-of-materials.html#bill-of-materials-1">Bill of Materials</a> - Development Merchant</li>
+<li>Ensure required fields are updated on <a href="product-list.html#product-list">Product List</a> - Development Merchant</li>
+<li>Ensure Orders are uploaded on the <a href="orderbook.html#orderbook">Orderbook</a> - Bulk Merchant</li>
+<li>Update Thread YY related fields on ‘Thread YY - IE’ tab - PDC IE team</li>
+</ol>
+<div class="inline-figure"><img src="images/paste-2568206E.png" style="width:100.0%"></div>
+<div id="fields-to-update---on-product-list" class="section level3" number="8.2.1">
+<h3>
+<span class="header-section-number">8.2.1</span> Fields to Update - on <a href="product-list.html#product-list">Product List</a><a class="anchor" aria-label="anchor" href="#fields-to-update---on-product-list"><i class="fas fa-link"></i></a>
+</h3>
+<p>On the Product List tab, there are 2 fields added which are required to calculate the Thread YY</p>
+<ol style="list-style-type: decimal">
+<li>No of Lines</li>
+<li>No of Machines</li>
+</ol>
+<div class="inline-figure"><img src="images/paste-249D7216.png" style="width:100.0%"></div>
+<p>These fields are both numeric fields and can be updated using the <a href="product-list.html#product-list">Product List</a> tab. Please refer to the <a href="product-list.html#product-list">Product List</a> documentation on how to update.</p>
+</div>
+<div id="fields-to-update---on-thread-yy---ie" class="section level3" number="8.2.2">
+<h3>
+<span class="header-section-number">8.2.2</span> Fields to Update - on Thread YY - IE<a class="anchor" aria-label="anchor" href="#fields-to-update---on-thread-yy---ie"><i class="fas fa-link"></i></a>
+</h3>
+<p>On the ‘Thread YY - IE’ tab, only 2 fields can be updated.</p>
+<ol style="list-style-type: decimal">
+<li>Total Thread Cons MTR</li>
+<li>MOQ Per Module</li>
+</ol>
+<div class="inline-figure"><img src="images/paste-BA8698A2.png" style="width:100.0%"></div>
+</div>
+<div id="calculated-fields-2" class="section level3" number="8.2.3">
+<h3>
+<span class="header-section-number">8.2.3</span> Calculated Fields<a class="anchor" aria-label="anchor" href="#calculated-fields-2"><i class="fas fa-link"></i></a>
+</h3>
+<p>The final Thread YY is calculated based on the inputs as per the above mentioned fields.</p>
+<div class="inline-figure"><img src="images/paste-7039B57B.png" style="width:100.0%"></div>
+<p>There are 3 calculated fields on the grid, as highlighted in Grey / Green / Red colors.</p>
+<ol style="list-style-type: decimal">
+<li>
+<p>Cone YY MOQ</p>
+<p><span class="math display">\[
+Cone YY MOQ = \frac{MOQ Per Module}{Total Order Qty} * No of Lines
+\]</span></p>
+</li>
+<li>
+<p>Cone YY IE</p>
+<p><span class="math display">\[
+Cone YY IE = \frac{Total Thread Cons MTR}{Cone Size}
+\]</span></p>
+</li>
+<li>
+<p>Final YY</p>
+<p><span class="math display">\[
+Final YY = MAX(Cone YY MOQ, Cone YY IE)
+\]</span></p>
+</li>
+</ol>
+</div>
+<div id="how-to-update-2" class="section level3" number="8.2.4">
+<h3>
+<span class="header-section-number">8.2.4</span> How to Update<a class="anchor" aria-label="anchor" href="#how-to-update-2"><i class="fas fa-link"></i></a>
+</h3>
+<p>To update Thread YY details</p>
+<p>1. Select a Customer</p>
+<p>2. Select a Season</p>
+<ul>
+<li>All the Styles created within the Season will get listed</li>
+</ul>
+<p>3. Apply any further filters as and when necessary</p>
+<p>4. Update the details by</p>
+<ul>
+<li>Typing into the excel-like grid on the screen</li>
+</ul>
+<p>OR</p>
+<ul>
+<li><p>Download the details into excel by clicking on the ‘Download’ button</p></li>
+<li><p>Update the details in Excel and Save the excel file</p></li>
+<li><p>Make sure not to edit / remove the Product ID and Item ID from the excel file</p></li>
+<li><p>Upload the Excel file back into the screen</p></li>
+</ul>
+<p>5. Press the ‘Save’ button to Save the updated information</p>
 
+</div>
 </div>
 </div>
   <div class="chapter-nav">
@@ -87,8 +241,20 @@
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#thread-yy"><span class="header-section-number">8</span> Thread YY</a></li>
-<li><a class="nav-link" href="#lululemon"><span class="header-section-number">8.1</span> Lululemon</a></li>
-<li><a class="nav-link" href="#all-other-customers"><span class="header-section-number">8.2</span> All other Customers</a></li>
+<li>
+<a class="nav-link" href="#lululemon"><span class="header-section-number">8.1</span> Lululemon</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#pe-threads"><span class="header-section-number">8.1.1</span> PE Threads</a></li>
+<li><a class="nav-link" href="#how-to-update-1"><span class="header-section-number">8.1.2</span> How to Update</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#all-other-customers"><span class="header-section-number">8.2</span> All other Customers</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#fields-to-update---on-product-list"><span class="header-section-number">8.2.1</span> Fields to Update - on Product List</a></li>
+<li><a class="nav-link" href="#fields-to-update---on-thread-yy---ie"><span class="header-section-number">8.2.2</span> Fields to Update - on Thread YY - IE</a></li>
+<li><a class="nav-link" href="#calculated-fields-2"><span class="header-section-number">8.2.3</span> Calculated Fields</a></li>
+<li><a class="nav-link" href="#how-to-update-2"><span class="header-section-number">8.2.4</span> How to Update</a></li>
+</ul>
+</li>
 </ul>
 
       <div class="book-extra">
