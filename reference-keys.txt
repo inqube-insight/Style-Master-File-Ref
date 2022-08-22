@@ -83,8 +83,14 @@ wfx-bom-validation
 bom-validation
 how-to-run-validation
 exception-report-content
-validation-logics
+validation-logic
+join-combinations
+variances
+data-saving---aws-s3
 style-validation
+how-to-run-validation-1
+what-will-get-validated
+data-saving---aws-s3-1
 user-access
 administration
 user-access-levels

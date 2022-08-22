@@ -83,38 +83,223 @@
 </h3>
 <p>To validate the WFX BOM against the SMF App BOM, please follow the steps as described below</p>
 <ol style="list-style-type: decimal">
-<li>Log on to the WFX System and Download the BI report named ‘StyleWiseBOM’ for the relevant Style Code(s)</li>
-<li>Log on to the WFX BOM Validation application</li>
-<li>On the ‘WFX Style-Wise BOM’ upload option, upload the WFX excel file as-is
+<li><p>Log on to the WFX System and Download the BI report named ‘StyleWiseBOM’ for the relevant Style Code(s)</p></li>
+<li><p>Log on to the WFX BOM Validation application</p></li>
+<li>
+<p>On the ‘WFX Style-Wise BOM’ upload option, upload the WFX excel file as-is</p>
 <ul>
-<li>Please do not modify the WFX downloaded file before uploading</li>
+<li>
+<p>Please do not modify the WFX downloaded file before uploading</p>
+<div class="inline-figure"><img src="images/paste-2B743450.png" style="width:25.0%"></div>
+</li>
 </ul>
 </li>
-<li>Once the file has been uploaded, on the ‘WFX - SMF Mapping’ tab, a table will appear showing the mapping between the WFX Style Code and the SMF Product ID</li>
-<li>Check the Style Code - Product ID mapping and correct it if necessary</li>
-<li>Click on the ‘Run BOM’</li>
+<li>
+<p>Once the file has been uploaded, on the ‘WFX - SMF Mapping’ tab, a table will appear showing the mapping between the WFX Style Code and the SMF Product ID</p>
+<div class="inline-figure"><img src="images/paste-B90D19A9.png"></div>
+</li>
+<li><p>Check the Style Code - Product ID mapping and correct it if necessary</p></li>
+<li><p>Click on the ‘Run BOM Validation’ button</p></li>
+<li><p>Once the Validation Run has completed, download the Exception Report by clicking on the ‘BOM Exception Report’ button.</p></li>
 </ol>
 </div>
 <div id="exception-report-content" class="section level3" number="12.1.2">
 <h3>
 <span class="header-section-number">12.1.2</span> Exception Report Content<a class="anchor" aria-label="anchor" href="#exception-report-content"><i class="fas fa-link"></i></a>
 </h3>
+<p>The downloaded Exception report consists of the following sheets</p>
+<ol style="list-style-type: decimal">
+<li>
+<p>Summary</p>
+<p>Each row in the Summary sheet represents 1 Style Code, showing how many exceptions are found for the Style Code</p>
+</li>
+<li>
+<p>Exceptions</p>
+<ul>
+<li><p>Each row on the Exceptions sheet represents 1 BOM Line Item and shows the comparison between WFX and SMF for the line Item</p></li>
+<li><p>For each of the field compared, this sheet shows the WFX value and the SMF Value</p></li>
+<li><p>If there is any exception / variation found, then the field name in which the exception was identified is mentioned inside the ‘Exception Comments’ column</p></li>
+<li><p>If a BOM Line Item does not have any exception, it will not get listed on this report</p></li>
+</ul>
+</li>
+<li>
+<p>Exceptions - Process Items</p>
+<ul>
+<li>Exceptions - Process Items sheet functions in the same way as the Exceptions sheet mentioned above, but only for ‘Process Items’</li>
+</ul>
+</li>
+<li>
+<p>On SMF - Missing in WFX</p>
+<ul>
+<li>If a BOM Line item is found on SMF BOM, but was missing from the WFX BOM, that will get listed here</li>
+</ul>
+</li>
+<li>
+<p>On WFX - Missing in SMF</p>
+<ul>
+<li>If a BOM Line item is found on WFX BOM, but was missing from the SMF BOM, that will get listed here</li>
+</ul>
+</li>
+<li>
+<p>SMF Items - Not Validated</p>
+<ul>
+<li>If there are any BOM Line items on the SMF BOM, which do not have a unique combination of Body Type &amp; WFX Code</li>
+<li>Such items cannot be joined to compare and hence need to be verified manually</li>
+</ul>
+</li>
+<li>
+<p>WFX Items - Not Validated</p>
+<ul>
+<li><p>If there are any BOM Line items on the WFX BOM, which do not have a unique combination of Body Type &amp; WFX Code</p></li>
+<li><p>Such items cannot be joined to compare and hence need to be verified manually</p></li>
+</ul>
+</li>
+</ol>
 </div>
-<div id="validation-logics" class="section level3" number="12.1.3">
+<div id="validation-logic" class="section level3" number="12.1.3">
 <h3>
-<span class="header-section-number">12.1.3</span> Validation Logics<a class="anchor" aria-label="anchor" href="#validation-logics"><i class="fas fa-link"></i></a>
+<span class="header-section-number">12.1.3</span> Validation Logic<a class="anchor" aria-label="anchor" href="#validation-logic"><i class="fas fa-link"></i></a>
 </h3>
+<div id="join-combinations" class="section level4" number="12.1.3.1">
+<h4>
+<span class="header-section-number">12.1.3.1</span> Join Combinations<a class="anchor" aria-label="anchor" href="#join-combinations"><i class="fas fa-link"></i></a>
+</h4>
+<p>The application tries to match SMF BOM items with the WFX BOM items based on 5 columns. Since there can be errors even on one of these columns, the application tries to join the tables in 4 steps, removing one of the columns in each step and only considering the un-joined rows for the step</p>
+<ul>
+<li><p>Body Type, Article Code, Article Color Code, Item Size, Garment Size</p></li>
+<li><p>Body Type, Article Code, Article Color Code, Item Size</p></li>
+<li><p>Body Type, Article Code, Article Color Code</p></li>
+<li><p>Body Type, Article Code</p></li>
+</ul>
+<p>At a bare minimum, the Body Type and Article Code combination must form a unique key.</p>
+</div>
+<div id="variances" class="section level4" number="12.1.3.2">
+<h4>
+<span class="header-section-number">12.1.3.2</span> Variances<a class="anchor" aria-label="anchor" href="#variances"><i class="fas fa-link"></i></a>
+</h4>
+<p>After each join step, the ‘joined’ row outputs are combined into a single data frame and checked for variances on the following columns between WFX and SMF BOMs</p>
+<ul>
+<li><p>Article Color Code</p></li>
+<li><p>Item Size</p></li>
+<li><p>Cons / Bulk YY</p></li>
+<li><p>Wastage</p></li>
+<li><p>Supplier</p></li>
+<li><p>Delivery Terms</p></li>
+<li><p>Price</p></li>
+<li><p>Shipment Mode</p></li>
+<li><p>Purchase Officer</p></li>
+<li><p>Garment Size</p></li>
+<li><p>Destination</p></li>
+</ul>
+<p>For 3 of the above columns, the matching is done using <a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard Similarity</a> instead of using an exact match.</p>
+<ul>
+<li><p>Supplier - minimum 90% match required</p></li>
+<li><p>Delivery Terms - minimum 75% match required</p></li>
+<li><p>Purchase Officer - minimum 75% match required</p></li>
+</ul>
+<p>Any variances found are added to the Exception Comments column.</p>
+</div>
+</div>
+<div id="data-saving---aws-s3" class="section level3" number="12.1.4">
+<h3>
+<span class="header-section-number">12.1.4</span> Data Saving - AWS S3<a class="anchor" aria-label="anchor" href="#data-saving---aws-s3"><i class="fas fa-link"></i></a>
+</h3>
+<p>Every time Validation is run, on AWS S3 under the folder ‘SMF/BOM Validation’, the following files are updated</p>
+<ol style="list-style-type: decimal">
+<li>Exceptions.parquet</li>
+<li>Exceptions_Process_Items.parquet</li>
+<li>Missing_In_WFX.parquet</li>
+<li>Additional_In_WFX.parquet</li>
+<li>BOM_Validation_Log.parquet</li>
+</ol>
+<p>On files 1 - 4 above, only the latest Validation run per Style Code is recorded. Hence, if a user runs validation 5 times for the same Style Code, only the results of the 5th execution will get saved.</p>
+<p>For file 5, log is recorded for every single run, hence just registering a time-stamp against a user, primarily to identify how many times Validation is being executed for a single Style Code.</p>
 </div>
 </div>
 <div id="style-validation" class="section level2" number="12.2">
 <h2>
 <span class="header-section-number">12.2</span> Style Validation<a class="anchor" aria-label="anchor" href="#style-validation"><i class="fas fa-link"></i></a>
 </h2>
+<p>Similar to the BOM Validation, the application also allows users to validate the <a href="product-list.html#product-list">Product List</a> details against WFX.</p>
+<div id="how-to-run-validation-1" class="section level3" number="12.2.1">
+<h3>
+<span class="header-section-number">12.2.1</span> How to Run Validation<a class="anchor" aria-label="anchor" href="#how-to-run-validation-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>To validate the WFX Style Details against the SMF Product List, please follow the steps as described below</p>
+<ol style="list-style-type: decimal">
+<li><p>Log on to the WFX System and Download the BI report named ‘Style Article Status Report’ for the relevant Style Code(s)</p></li>
+<li><p>Log on to the WFX BOM Validation application</p></li>
+<li>
+<p>On the ‘WFX Style Detail Report’ upload option, upload the WFX excel file as-is</p>
+<ul>
+<li>Please do not modify the WFX downloaded file before uploading</li>
+</ul>
+</li>
+<li><p>Once the file has been uploaded, Click on the ‘Run Style Validation’ button</p></li>
+<li><p>Once the Validation Run has completed, download the Exception Report by clicking on the ‘Style Exception Report’ button.</p></li>
+</ol>
+</div>
+<div id="what-will-get-validated" class="section level3" number="12.2.2">
+<h3>
+<span class="header-section-number">12.2.2</span> What Will get validated?<a class="anchor" aria-label="anchor" href="#what-will-get-validated"><i class="fas fa-link"></i></a>
+</h3>
+<p>The following columns will get validated for all the Style Codes uploaded for validation</p>
+<ul>
+<li>Customer</li>
+<li>Buyer Department</li>
+<li>Material Type</li>
+<li>Article Description</li>
+<li>Product Group</li>
+<li>Sub Category</li>
+<li>Season</li>
+<li>Style</li>
+<li>Gender</li>
+<li>Selling Price</li>
+<li>Internal Style Ref</li>
+<li>Garment Color Code</li>
+<li>Garment Color Name</li>
+<li>WFX Color Code / Base Color Code</li>
+<li>Program</li>
+<li>Sub Con Type</li>
+<li>Chassis Code</li>
+<li>SMV Pre</li>
+<li>SMV Sewing</li>
+</ul>
+<p>Few points to note:</p>
+<ul>
+<li><p>Numeric fields will be rounded off to 4 decimal places before comparing</p></li>
+<li><p>String / character fields will be converted to lower case before matching</p></li>
+<li><p>For string / character fields, extra spaces will be removed before matching</p></li>
+</ul>
+</div>
+<div id="data-saving---aws-s3-1" class="section level3" number="12.2.3">
+<h3>
+<span class="header-section-number">12.2.3</span> Data Saving - AWS S3<a class="anchor" aria-label="anchor" href="#data-saving---aws-s3-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>Every time Validation is run, on AWS S3 under the folder ‘SMF/BOM Validation’, the following files are updated</p>
+<ol style="list-style-type: decimal">
+<li>Style_Validation_Detail.parquet</li>
+<li>Style_Validation_Log.parquet</li>
+</ol>
+<p>For ‘Style_Validation_Detail’, only the latest Validation run per Style Code is recorded. Hence, if a user runs validation 5 times for the same Style Code, only the results of the 5th execution will get saved.</p>
+<p>For ‘Style_Validation_Log’, log is recorded for every single run, hence just registering a time-stamp against a user, primarily to identify how many times Validation is being executed for a single Style Code.</p>
+</div>
 </div>
 <div id="user-access" class="section level2" number="12.3">
 <h2>
 <span class="header-section-number">12.3</span> User Access<a class="anchor" aria-label="anchor" href="#user-access"><i class="fas fa-link"></i></a>
 </h2>
+<p>For access, there is a SharePoint list named ‘ShinyApps User Access’ under the ‘COE Operations’ sub-site.</p>
+<p>On the said list, a user must be added and the following column must be updated</p>
+<p>1. WFX BOM Validation</p>
+<ul>
+<li>Yes or No</li>
+</ul>
+<p>Based on the access levels defined on this SharePoint list, once a day a script within the ‘Data Processing’ project on the server adds or removes users from the <a href="https://inqube.shinyapps.io/WFX-BOM-Validation/" target="_blank">WFX BOM Validation</a> application on shinyapps.io</p>
+<ul>
+<li>25_Shiny User Access.R</li>
+</ul>
+<p>The above script specifies whether a user has access to the application or not. There are no custom access levels, if a user has access, they can run validation.</p>
 
 </div>
 </div>
@@ -129,10 +314,17 @@
 <a class="nav-link" href="#bom-validation"><span class="header-section-number">12.1</span> BOM Validation</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#how-to-run-validation"><span class="header-section-number">12.1.1</span> How to Run Validation</a></li>
 <li><a class="nav-link" href="#exception-report-content"><span class="header-section-number">12.1.2</span> Exception Report Content</a></li>
-<li><a class="nav-link" href="#validation-logics"><span class="header-section-number">12.1.3</span> Validation Logics</a></li>
+<li><a class="nav-link" href="#validation-logic"><span class="header-section-number">12.1.3</span> Validation Logic</a></li>
+<li><a class="nav-link" href="#data-saving---aws-s3"><span class="header-section-number">12.1.4</span> Data Saving - AWS S3</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#style-validation"><span class="header-section-number">12.2</span> Style Validation</a></li>
+<li>
+<a class="nav-link" href="#style-validation"><span class="header-section-number">12.2</span> Style Validation</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#how-to-run-validation-1"><span class="header-section-number">12.2.1</span> How to Run Validation</a></li>
+<li><a class="nav-link" href="#what-will-get-validated"><span class="header-section-number">12.2.2</span> What Will get validated?</a></li>
+<li><a class="nav-link" href="#data-saving---aws-s3-1"><span class="header-section-number">12.2.3</span> Data Saving - AWS S3</a></li>
+</ul>
+</li>
 <li><a class="nav-link" href="#user-access"><span class="header-section-number">12.3</span> User Access</a></li>
 </ul>
 
