@@ -24,7 +24,7 @@ To validate the WFX BOM against the SMF App BOM, please follow the steps as desc
 
 4.  Once the file has been uploaded, on the 'WFX - SMF Mapping' tab, a table will appear showing the mapping between the WFX Style Code and the SMF Product ID
 
-    ![](images/paste-B90D19A9.png){width="50%"}
+    ![](images/paste-B90D19A9.png){width="100%"}
 
 5.  Check the Style Code - Product ID mapping and correct it if necessary
 
