@@ -4,7 +4,7 @@
 
 The purpose of this application is to provide a functionality to compare the final WFX BOM with the SMF App BOM and show Exceptions, if any.
 
-![](images/paste-E2D744B5.png)
+![](images/paste-E2D744B5.png){width='100%'}
 
 ## BOM Validation
 
